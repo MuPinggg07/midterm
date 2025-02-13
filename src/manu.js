@@ -79,30 +79,61 @@ function Manu() {
       </header>
 
       <div className="menu-container">
-        {['soup', 'wagyu', 'salmon_sushi', 'vegetable', 'drink'].map((item, idx) => (
-          <div className="menu-item" key={idx}>
-            <img src={require(`./img/${item}.jpg`)} alt={item} />
-            <label>{item} - {prices[item]} บาท</label>
-            <input
-              type="number"
-              name={item}
-              min="0"
-              value={quantities[item]}
-              onChange={handleChange}
-            />
-          </div>
-        ))}
+        <div className="row">
+          {['soup', 'wagyu', 'salmon_sushi', 'vegetable', 'drink'].map((item, idx) => (
+            <div className="col-sm-12 col-md-4 col-lg-3" key={idx}>
+              <div className="card" style={{ margin: '1rem 0', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
+                <img 
+                  src={item === 'soup' ? soupImage : 
+                        item === 'wagyu' ? wagyuImage : 
+                        item === 'salmon_sushi' ? salmonSushiImage : 
+                        item === 'vegetable' ? vegetableImage : 
+                        drinkImage} 
+                  className="card-img-top" 
+                  alt={item} 
+                  style={{ height: '200px', objectFit: 'cover' }} 
+                />
+                <div className="card-body text-center">
+                  <h5 className="card-title">{item.charAt(0).toUpperCase() + item.slice(1)}</h5>
+                  <p className="card-text">ราคา: {prices[item]} บาท</p>
+                  <input
+                    type="number"
+                    name={item}
+                    min="0"
+                    value={quantities[item]}
+                    onChange={handleChange}
+                    className="form-control"
+                    style={{ width: '60%', marginBottom: '10px' }}
+                  />
+                  <button 
+                    className="btn btn-primary" 
+                    onClick={() => handleChange({ target: { name: item, value: quantities[item] + 1 } })}
+                    style={{ width: '100%' }}
+                  >
+                    เพิ่ม
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="bill-container">
+      <div className="bill-container" style={{ marginTop: '2rem', textAlign: 'center' }}>
         <h3>เช็คบิล</h3>
         <div dangerouslySetInnerHTML={{ __html: billDetails }} />
         <p style={{ color: 'red' }}>{discount > 0 ? `ส่วนลด 10%: -${discount} บาท` : ''}</p>
         <p><b>ยอดรวมทั้งหมด: {total} บาท</b></p>
-        <button onClick={placeOrder}>สั่งอาหาร</button>
+        <button 
+          onClick={placeOrder} 
+          className="btn btn-success"
+          style={{ marginTop: '1rem' }}
+        >
+          สั่งอาหาร
+        </button>
       </div>
 
-      <footer className="App-footer">
+      <footer className="App-footer" style={{ textAlign: 'center', marginTop: '2rem' }}>
         <p>© 2025 ร้านบุฟเฟ่ต์น้องเชียงใหม่</p>
         <p>ติดต่อเรา: info@buffetnongs.com</p>
         <p>ที่อยู่: 123 ถนนเชียงใหม่, เชียงใหม่, ประเทศไทย</p>

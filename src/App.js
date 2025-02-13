@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // ต้องติดตั้ง react-router-dom
-import Manu from './manu';
+import Menu from './manu';
 
 // รูปภาพที่ต้องการใช้
 import foodImage1 from './img/100.jpg'; 
@@ -15,21 +15,29 @@ function App() {
       <header className="App-header">
         <h1>ร้านบุฟเฟ่ต์น้องเชียงใหม่</h1>
       </header>
-      
+      <Router>
+      <div>
       {/* Main Content Section */}
       <div className="food-container">  
         <div className="food-items">
           {/* ใช้ <a> tag สำหรับการลิ้งค์ไปยังหน้า Home */}
           <div className="food-box">
-            <a href="/">Home</a>
+            <a href="/midterm">Home</a>
           </div>
           {/* ใช้ <a> tag สำหรับการลิ้งค์ไปยังหน้า Menu */}
           <div className="food-box">
-            <a href="menu.js">เมนูอาหาร</a>
+            <a href="/menu">เมนูอาหาร</a>
           </div>
         </div>
       </div>
 
+            {/* Define Routes */}
+            <Routes>
+          <Route path="/menu" element={<Menu />} />
+        </Routes>
+      </div>
+    </Router>
+    
       <br></br>
       {/* Carousel Section */}
       <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">

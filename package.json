@@ -2,6 +2,7 @@
   "name": "mitdterm-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mupinggg07.github.io/midterm/",
   "dependencies": {
     "bootstart": "^0.0.0",
     "bootstrap": "^5.3.3",
@@ -17,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -36,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
