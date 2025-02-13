@@ -6,6 +6,24 @@
   color: white;
   padding: 20px;
   text-align: center;
+  font-family: "Kanit", serif;
+}
+ิ
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ให้เว็บมีความสูงอย่างน้อยเต็มหน้าจอ */
+  font-family: "Kanit", serif;
+}
+
+.content {
+  flex-grow: 1; /* ขยายเนื้อหาเพื่อดัน Footer ลงไปล่างสุด */
 }
 
 /* Footer Section */
@@ -26,12 +44,6 @@
   margin-top: 30px;
 }
 
-.food-items {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* ระยะห่างระหว่างปุ่ม */
-}
-
 .food-box {
   padding: 20px;
   background-color: #f8f9fa;
@@ -45,6 +57,83 @@
 
 /* Make the Carousel Section responsive */
 .carousel-inner img {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: auto; /* Maintain the aspect ratio */
+  max-height: 500px; /* Optional: Adjust to control image height */
+  object-fit: cover; /* Ensures the image fills the area without distortion */
+}
+
+.food-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: 200px; /* สามารถปรับขนาดรูปได้ */
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.food-items {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.custom-button {
+  text-decoration: none;
+  background-color: rgba(255, 99, 71, 0.8); /* #ff6347 แบบโปร่งเล็กน้อย */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:hover {
+  background-color: #ff6347; /* สีเข้มขึ้น */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+/* ในไฟล์ CSS ของคุณ */
+.f {
+  font-family: "Kanit", serif;
+  font-weight: 400; /* เลือกน้ำหนักฟอนต์ตามที่ต้องการ */
 }
