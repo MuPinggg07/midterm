@@ -57,8 +57,8 @@ function App() {
         </div>
         <div className="footer-section">
           <h4 >ติดต่อเรา</h4>
-          <p >โทรศัพท์: 012-345-6789</p>
-          <p >อีเมล: info@buffet.com</p>
+          <p >โทรศัพท์: 0-999-9999</p>
+          <p >อีเมล: stu66309010064@lannapoly.ac.th</p>
         </div>
       </div>
       <div className="footer-bottom">
