@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/midterm/static/css/main.0dc85a86.css",
-    "main.js": "/midterm/static/js/main.b040f75f.js",
+    "main.css": "/midterm/static/css/main.b909e231.css",
+    "main.js": "/midterm/static/js/main.86eb8113.js",
     "static/js/488.9c55a041.chunk.js": "/midterm/static/js/488.9c55a041.chunk.js",
-    "static/media/3.PNG": "/midterm/static/media/3.a738b86df43b777fc072.PNG",
-    "static/media/4.PNG": "/midterm/static/media/4.49d3bc892a896461a306.PNG",
-    "static/media/2.PNG": "/midterm/static/media/2.7423d1fe9d278a8fec42.PNG",
+    "static/media/3.jpg": "/midterm/static/media/3.9af2eafe5a6b75a49216.jpg",
+    "static/media/2.jpg": "/midterm/static/media/2.23fcd6a3ce9a95187328.jpg",
     "static/media/beerf1.jpg": "/midterm/static/media/beerf1.3c916317c5bd5c66ef40.jpg",
-    "static/media/1.PNG": "/midterm/static/media/1.6fe8042e790d951f72bd.PNG",
+    "static/media/4.jpg": "/midterm/static/media/4.45aa334e1f1aa79b75c2.jpg",
     "static/media/100.jpg": "/midterm/static/media/100.f051d070f8f0e099fe55.jpg",
     "static/media/500.jpg": "/midterm/static/media/500.d98230f15d155377f197.jpg",
     "static/media/5951.jpg": "/midterm/static/media/5951.d98230f15d155377f197.jpg",
-    "static/media/5.PNG": "/midterm/static/media/5.3a2d4cc329469dfee8e9.PNG",
+    "static/media/1.jpg": "/midterm/static/media/1.e534b3f61eef2627a8fc.jpg",
+    "static/media/5.png": "/midterm/static/media/5.a62a767fd1950e1e6728.png",
     "index.html": "/midterm/index.html",
-    "main.0dc85a86.css.map": "/midterm/static/css/main.0dc85a86.css.map",
-    "main.b040f75f.js.map": "/midterm/static/js/main.b040f75f.js.map",
+    "main.b909e231.css.map": "/midterm/static/css/main.b909e231.css.map",
+    "main.86eb8113.js.map": "/midterm/static/js/main.86eb8113.js.map",
     "488.9c55a041.chunk.js.map": "/midterm/static/js/488.9c55a041.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0dc85a86.css",
-    "static/js/main.b040f75f.js"
+    "static/css/main.b909e231.css",
+    "static/js/main.86eb8113.js"
   ]
 }
