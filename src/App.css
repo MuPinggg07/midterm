@@ -1,0 +1,50 @@
+/* App.css */
+
+/* Header Section */
+.App-header {
+  background-color: #ff6347; /* หรือสีที่คุณต้องการ */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer Section */
+.App-footer {
+  background-color: #ff6347; /* ทำให้สีเหมือนกับ App-header */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Food Container and Button Layout */
+.food-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.food-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+.food-box {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  width: 120px;
+}
+
+/* Make the Carousel Section responsive */
+.carousel-inner img {
+  width: auto;
+  height: auto;
+}
